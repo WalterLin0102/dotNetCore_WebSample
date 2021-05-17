@@ -33,5 +33,22 @@ namespace dotNetCore_WebSample.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+        public ActionResult Search(Guid Id)
+        {
+            return View();
+        }
+        public ActionResult Update(Users Data)
+        {
+            return View();
+        }
+        public ActionResult Delete(Guid ID)
+        {
+            return View();
+        }
     }
 }
